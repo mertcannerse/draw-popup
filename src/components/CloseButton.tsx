@@ -2,11 +2,11 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
-interface ICloseButton {
+interface ICloseButtonProps {
   toggleDrawer: () => void;
 }
 
-const CloseButton: React.FC<ICloseButton> = ({ toggleDrawer }) => {
+const CloseButton: React.FC<ICloseButtonProps> = ({ toggleDrawer }) => {
   return (
     <button
       className="mt-11 bg-gray-400 rounded-full"

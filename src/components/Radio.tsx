@@ -1,6 +1,6 @@
 import React from "react";
 
-interface IDrawerRight {
+interface IRadioProps {
   id?: string;
   name?: string;
   onChange?: (value: string) => void;
@@ -9,7 +9,7 @@ interface IDrawerRight {
   checked?: boolean;
 }
 
-const Radio: React.FC<IDrawerRight> = (props) => {
+const Radio: React.FC<IRadioProps> = (props) => {
   const handleChange = () => {
     if (props.onChange && props.value) {
       props.onChange(props.value);
@@ -24,7 +24,9 @@ const Radio: React.FC<IDrawerRight> = (props) => {
       onChange={handleChange}
       value={props.value}
       className={
-        props.className ? props.className : "cursor-pointer accent-[#105EF5] mr-1"
+        props.className
+          ? props.className
+          : "cursor-pointer accent-[#105EF5] mr-1"
       }
       checked={props.checked}
     />

@@ -2,12 +2,15 @@ import React from "react";
 import Form from "./Form";
 import CloseButton from "./CloseButton";
 
-interface IDrawerRight {
+interface IDrawerRightProps {
   toggleDrawer: () => void;
   drawerOpen: boolean;
 }
 
-const DrawerRight: React.FC<IDrawerRight> = ({ drawerOpen, toggleDrawer }) => {
+const DrawerRight: React.FC<IDrawerRightProps> = ({
+  drawerOpen,
+  toggleDrawer,
+}) => {
   return (
     <div
       id="drawer-right"

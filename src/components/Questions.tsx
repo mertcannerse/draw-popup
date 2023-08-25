@@ -1,14 +1,14 @@
 import React from "react";
 import Radio from "./Radio";
 
-interface IQuestions {
+interface IQuestionsProps {
   formik?: any;
   questionsText?: string;
   name: string;
   options: { value: string }[];
 }
 
-const Questions: React.FC<IQuestions> = ({
+const Questions: React.FC<IQuestionsProps> = ({
   formik,
   questionsText,
   name,

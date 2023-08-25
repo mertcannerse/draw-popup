@@ -1,11 +1,11 @@
 import React from "react";
 
-interface IDrawerButton {
+interface IDrawerButtonProps {
   toggleDrawer: () => void;
   drawerOpen: boolean;
 }
 
-const DrawerButton: React.FC<IDrawerButton> = ({
+const DrawerButton: React.FC<IDrawerButtonProps> = ({
   toggleDrawer,
   drawerOpen,
 }) => {
